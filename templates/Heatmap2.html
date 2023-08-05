@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://fastly.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ce7fc862992419cad2ce4a2ad513de7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1ce7fc862992419cad2ce4a2ad513de7" ></div>
+        
+</body>
+<script>    
+    
+            var map_1ce7fc862992419cad2ce4a2ad513de7 = L.map(
+                "map_1ce7fc862992419cad2ce4a2ad513de7",
+                {
+                    center: [30.5076, 114.2352],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98e56d571fc348589cd9dac82a086431 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ce7fc862992419cad2ce4a2ad513de7);
+        
+    
+            var poly_line_09c9ddfc164a4ee58eac384e066744d4 = L.polyline(
+                [[30.515421, 114.222956], [30.508751, 114.231758]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1ce7fc862992419cad2ce4a2ad513de7);
+        
+    
+            var marker_99ae9ed16bd74e9a977a21385641d897 = L.marker(
+                [30.515421, 114.222956],
+                {}
+            ).addTo(map_1ce7fc862992419cad2ce4a2ad513de7);
+        
+    
+        var popup_49b7c5626ef74549be7e51ec6b56560f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b6ffad2fb4b4e279352168e6da92b2c = $(`<div id="html_9b6ffad2fb4b4e279352168e6da92b2c" style="width: 100.0%; height: 100.0%;">子期路四新大道</div>`)[0];
+            popup_49b7c5626ef74549be7e51ec6b56560f.setContent(html_9b6ffad2fb4b4e279352168e6da92b2c);
+        
+
+        marker_99ae9ed16bd74e9a977a21385641d897.bindPopup(popup_49b7c5626ef74549be7e51ec6b56560f)
+        ;
+
+        
+    
+    
+            var marker_30508171d74f46cb9a9e3970b1688d1d = L.marker(
+                [30.508751, 114.231758],
+                {}
+            ).addTo(map_1ce7fc862992419cad2ce4a2ad513de7);
+        
+    
+            var icon_390e1d588d234f2c942b8294c3e82cb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_30508171d74f46cb9a9e3970b1688d1d.setIcon(icon_390e1d588d234f2c942b8294c3e82cb8);
+        
+    
+        var popup_43ecf29646714e7e94a0c24bafa0c16a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72755ddee2a24913821a2943de373303 = $(`<div id="html_72755ddee2a24913821a2943de373303" style="width: 100.0%; height: 100.0%;">鄂渚路文举街</div>`)[0];
+            popup_43ecf29646714e7e94a0c24bafa0c16a.setContent(html_72755ddee2a24913821a2943de373303);
+        
+
+        marker_30508171d74f46cb9a9e3970b1688d1d.bindPopup(popup_43ecf29646714e7e94a0c24bafa0c16a)
+        ;
+
+        
+    
+</script>

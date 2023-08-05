@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智慧公交推荐系统</title>
+
+</head>
+<body>
+
+	<style type="text/css">
+    body {
+       background-image: url("static/img/背景.png");
+       position: center center;
+       background-repeat:no-repeat ;
+      background-size:100% 100%;
+       background-attachment: fixed;
+      }
+	</style>
+
+        <img src="static\img\地大.png" title="地质大学" width="100"height="100"  />
+<!--style="p    osition: absolute;left:300px;top:100px"-->
+        <h style="font-weight:bold;font-weight:400;font-size:24px;position: fixed;left:600px;top:10%">欢迎进入智慧公交路线推荐系统</h>
+        <form id="select1" method='POST' action='/temp'style="position: fixed;left:25%;top:60%">
+            <img src="static/img/热力图.png" title="热力图" width="300"height="300"  style="position: fixed;left:17%;top:20%"/>
+            <h1>
+
+                <input type="submit" value="点击查询热力图">
+            </h1>
+
+        </form>
+        <form id="select2" method='POST' action='/luxian'style="position: fixed;left:75%;top:60%">
+            <img src="static/img/路线图.png" title="路线图" width="300"height="300"  style="position: fixed;left:67%;top:20%"/>
+            <h1>
+
+                <input type="submit" value="点击查询路线图(Q-learning)">
+            </h1>
+
+        </form>
+        <form id="select3" method='POST' action='/sarsa_luxian'style="position: fixed;left:75%;top:70%">
+
+            <h1>
+
+                <input type="submit" value="点击查询路线图(sarsa)">
+            </h1>
+
+        </form>
+</body>
+</html>

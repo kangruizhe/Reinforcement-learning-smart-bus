@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://fastly.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f76f254537848bbbb1d785d9a8a6ac3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1f76f254537848bbbb1d785d9a8a6ac3" ></div>
+        
+</body>
+<script>    
+    
+            var map_1f76f254537848bbbb1d785d9a8a6ac3 = L.map(
+                "map_1f76f254537848bbbb1d785d9a8a6ac3",
+                {
+                    center: [30.5076, 114.2352],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38cd9d6143274eb985f8c5ad182bfa1c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f76f254537848bbbb1d785d9a8a6ac3);
+        
+    
+            var poly_line_9d7f9d80c03c44ba8d87c533bf890585 = L.polyline(
+                [[30.549761, 114.268021], [30.516984, 114.206719], [30.508342, 114.231372]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_1f76f254537848bbbb1d785d9a8a6ac3);
+        
+    
+            var marker_867a5c1db0c6475fa591297ffcde05fd = L.marker(
+                [30.549761, 114.268021],
+                {}
+            ).addTo(map_1f76f254537848bbbb1d785d9a8a6ac3);
+        
+    
+            var icon_3bef05e6ae944652ace650b54b64a954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_867a5c1db0c6475fa591297ffcde05fd.setIcon(icon_3bef05e6ae944652ace650b54b64a954);
+        
+    
+        var popup_ec3f369e15e44fe08880441c39bc35d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6a4202f349b4fbf8c3299a25ba41f61 = $(`<div id="html_f6a4202f349b4fbf8c3299a25ba41f61" style="width: 100.0%; height: 100.0%;">汉阳大道汉阳公园(起点)</div>`)[0];
+            popup_ec3f369e15e44fe08880441c39bc35d8.setContent(html_f6a4202f349b4fbf8c3299a25ba41f61);
+        
+
+        marker_867a5c1db0c6475fa591297ffcde05fd.bindPopup(popup_ec3f369e15e44fe08880441c39bc35d8)
+        ;
+
+        
+    
+    
+            var marker_382a2dc51c3749d1a9458a3b60275f88 = L.marker(
+                [30.516984, 114.206719],
+                {}
+            ).addTo(map_1f76f254537848bbbb1d785d9a8a6ac3);
+        
+    
+            var icon_6de4dba5a91c409cabd6ed7ba478e99b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_382a2dc51c3749d1a9458a3b60275f88.setIcon(icon_6de4dba5a91c409cabd6ed7ba478e99b);
+        
+    
+        var popup_61af56bdffb74dd58e4383dd73bb713b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00e433d3558d4280bc5aef43293f5249 = $(`<div id="html_00e433d3558d4280bc5aef43293f5249" style="width: 100.0%; height: 100.0%;">四新中路四新南路</div>`)[0];
+            popup_61af56bdffb74dd58e4383dd73bb713b.setContent(html_00e433d3558d4280bc5aef43293f5249);
+        
+
+        marker_382a2dc51c3749d1a9458a3b60275f88.bindPopup(popup_61af56bdffb74dd58e4383dd73bb713b)
+        ;
+
+        
+    
+    
+            var marker_5782ff1830704cb9871f5b7ba443a63e = L.marker(
+                [30.508342, 114.231372],
+                {}
+            ).addTo(map_1f76f254537848bbbb1d785d9a8a6ac3);
+        
+    
+            var icon_282e3ebf97af4fb0bdc9b7ec2a1584e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5782ff1830704cb9871f5b7ba443a63e.setIcon(icon_282e3ebf97af4fb0bdc9b7ec2a1584e5);
+        
+    
+        var popup_92c5eacd8d9441888f190dadb30b827a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d8e3ab7663f4eb49c0ed1542ce8e729 = $(`<div id="html_2d8e3ab7663f4eb49c0ed1542ce8e729" style="width: 100.0%; height: 100.0%;">鄂渚路文举街(终点)</div>`)[0];
+            popup_92c5eacd8d9441888f190dadb30b827a.setContent(html_2d8e3ab7663f4eb49c0ed1542ce8e729);
+        
+
+        marker_5782ff1830704cb9871f5b7ba443a63e.bindPopup(popup_92c5eacd8d9441888f190dadb30b827a)
+        ;
+
+        
+    
+</script>
